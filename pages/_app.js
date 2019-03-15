@@ -1,6 +1,6 @@
 import App, { Container } from 'next/app'
 import withNProgress from 'next-nprogress'
-import NProgressStyles from 'next-nprogress/styles'
+import NProgressStyles from 'next-nprogress/component'
 import { Provider } from 'react-redux'
 import withRedux from 'next-redux-wrapper'
 

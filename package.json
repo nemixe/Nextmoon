@@ -14,6 +14,7 @@
   "dependencies": {
     "@zeit/next-less": "^1.0.1",
     "antd": "^3.8.2",
+    "axios": "^0.18.0",
     "isomorphic-fetch": "^2.2.1",
     "less": "^2.7.2",
     "next": "^7.0.0",

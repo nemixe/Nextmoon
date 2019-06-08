@@ -4,29 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node server.js",
-    "start": "cross-env NODE_ENV=production node server.js",
-    "export": "next export",
-    "build": "next build"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@zeit/next-less": "^1.0.1",
-    "antd": "^3.8.2",
-    "isomorphic-fetch": "^2.2.1",
-    "less": "^2.7.2",
-    "next": "^7.0.0",
-    "next-nprogress": "^1.1.0",
-    "next-redux-wrapper": "^2.0.0",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "react-redux": "^5.0.7",
-    "redux": "^4.0.0",
-    "sw-precache-webpack-plugin": "^0.11.5"
-  },
-  "devDependencies": {
-    "cross-env": "^5.2.0",
-    "prop-types": "^15.6.2"
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   }
 }

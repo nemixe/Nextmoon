@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import proptypes from 'prop-types'
-import '../style/theme.scss'
+import '../assets/scss/theme.scss'
 
 class Layout extends React.Component {
   render() {

@@ -1,10 +1,11 @@
 import Head from 'next/head'
-import Proptypes from 'prop-types'
+import proptypes from 'prop-types'
+import '../style/theme.scss'
 
 class Layout extends React.Component {
   render() {
-    return (
-      <div role="main">
+    return(
+      <div>
         <Head>
           <title>{this.props.title}</title>
           <meta name="description" content={this.props.description} />
@@ -18,8 +19,7 @@ class Layout extends React.Component {
 }
 
 Layout.propTypes = {
-  title: Proptypes.string.isRequired,
-  description: Proptypes.string.isRequired
+  title: proptypes.string.isRequired,
 }
 
 export default Layout

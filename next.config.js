@@ -1,25 +1,3 @@
-const withLESS = require('@zeit/next-less')
-const swPrecheWebpackPlugin = require('sw-precache-webpack-plugin')
+const withSass = require('@zeit/next-sass')
 
-if (typeof require !== 'undefined') {
-  require.extensions['.less'] = (file) => { }
-}
-
-module.exports = withLESS({
-  webpack: (config) => {
-    config.plugins.push(
-      new swPrecheWebpackPlugin({
-        verbose: true,
-        staticFileGlobsIgnorePatterns: [/\.next\//],
-        runtimeCaching: [
-          {
-            handler: 'networkFirst',
-            urlPattern: /^https?.*/
-          }
-        ]
-      })
-    )
-
-    return config
-  }
-})
+module.exports = withSass({})
